@@ -11,17 +11,17 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('salaries', function (Blueprint $table) {
-            $table->id();
-            $table->unsignedBigInteger("employee_id");
-            $table->unsignedInteger("amount");
-            $table->timestamp("start_date");
-            $table->timestamp("end_end");
-            $table->timestamps();
-
-            // Добавляем связь с таблицей employees
-            $table->foreign("employee_id")->references("id")->on("employees")->onDelete("cascade");
-        });
+//        Schema::create('salaries', function (Blueprint $table) {
+//            $table->id();
+//            $table->unsignedBigInteger("employee_id");
+//            $table->unsignedInteger("amount");
+//            $table->timestamp("start_date");
+//            $table->timestamp("end_end");
+//            $table->timestamps();
+//
+//            // Добавляем связь с таблицей employees
+//            $table->foreign("employee_id")->references("id")->on("employees")->onDelete("cascade");
+//        });
     }
 
     /**
